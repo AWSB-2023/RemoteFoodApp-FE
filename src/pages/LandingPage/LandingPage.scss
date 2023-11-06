@@ -1,0 +1,67 @@
+.landing-page {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.landing-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 85%;
+    margin: 0 auto;
+    align-items: start;
+}
+
+.loginBtn {
+    background: transparent;
+    border: 2px solid var(--dark-green);
+    border-radius: 30px;
+    color: var(--dark-green);
+    width: 142px;
+}
+
+.landing-content {
+    margin-top: 12rem;
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin: 12rem auto 0 auto;
+    justify-content: space-between;
+    gap: 2rem;
+
+    .landing-title {
+        font-family: Rufina;
+        font-size: 86px;
+        font-weight: 700;
+        color: var(--dark-green);
+        text-align: left;
+    }
+    .landing-desc {
+        color: var(--green);
+        font-family: Poppins;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 53px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+    .btn-element {
+        text-align: left;
+        margin-top: 5rem;
+
+        .exploreBtn {
+            background-color: var(--dark-green);
+            border-radius: 3px;
+            width: 258px;
+            font-family: Poppins;
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 30px;
+            letter-spacing: 0em;
+            color: var(--white);
+            box-shadow: 6px 33px 59px 0px #0000004D;     
+        }
+    }
+}
