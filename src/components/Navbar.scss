@@ -1,0 +1,16 @@
+.menu-items {
+    display: flex;
+    flex-direction: row;
+    width: 45%;
+    justify-content: space-between;
+    align-self: center;
+
+    span {
+        font-size: 22px;
+        font-weight: 500;
+        line-height: 33px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: var(--dark-green);
+    }
+}
