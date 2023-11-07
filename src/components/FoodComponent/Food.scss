@@ -1,0 +1,21 @@
+.food-element {
+    text-align: left;
+    color: var(--dark-gray);
+
+    .title {
+        font-size: 22px;
+        font-weight: 600;
+        line-height: 33px;
+        letter-spacing: 0em;
+
+    }
+    .desc {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 33px;
+        letter-spacing: 0em;
+        display: flex;
+        gap: 1rem;
+        margin-top: 0.5rem;
+    }
+}
