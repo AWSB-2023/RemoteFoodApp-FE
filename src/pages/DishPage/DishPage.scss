@@ -1,0 +1,76 @@
+.dish-page {
+    margin: 5rem 15rem;
+}
+
+.dish-title {
+    // margin-top: 5rem;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    font-size: 70px;
+    gap: 10rem;
+    font-weight: 500;
+}
+
+.dish-content {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+    .details {
+        width: 21%;
+        text-align: left;
+        margin-left: 2rem;
+        margin-top: 20px;
+        .about {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+
+            .desc {
+                display: flex;
+                gap: 20px;
+                font-size: 18px;
+                font-weight: 500;
+            }
+        }
+        .ingredients {
+            margin-top: 2rem;
+            background-color: var(--white);
+            padding: 0.8rem;
+            border-radius: 30px;
+            font-size: 18px;
+            font-weight: 500;
+            color: var(--dark-green);
+        }
+    }
+    .method {
+        display: flex;
+        flex-direction: column;
+        align-content: flex-end;
+        width: 65%;
+        background-color: var(--white);
+        padding: 0.8rem 2rem;
+        border-radius: 30px;
+        text-align: left;
+        color: var(--dark-green);
+        padding-bottom: 2rem;
+
+        div {
+            font-size: 32px;
+            font-weight: 600;
+        }
+
+        .step-name {
+            font-size: 22px;
+            font-weight: 500;
+            margin: 0.5rem 0;
+        }
+
+        .step-content {
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+    }
+}

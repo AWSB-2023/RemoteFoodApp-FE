@@ -1,4 +1,4 @@
-.food-element {
+.food-element-column {
     text-align: left;
     color: var(--dark-gray);
 
@@ -9,6 +9,7 @@
         letter-spacing: 0em;
 
     }
+
     .desc {
         font-size: 18px;
         font-weight: 500;
@@ -17,5 +18,60 @@
         display: flex;
         gap: 1rem;
         margin-top: 0.5rem;
+    }
+}
+
+.food-element-row {
+    text-align: left;
+    color: var(--dark-gray);
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+
+    .img-small {
+        width: 60%;
+    }
+
+    .food-desc {
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        margin-bottom: 1em;
+
+        &-small {
+            @extend .food-desc;
+            margin-bottom: 2em;
+        }
+    }
+
+    .title {
+        font-size: 22px;
+        font-weight: 600;
+        line-height: 33px;
+        letter-spacing: 0em;
+
+        &-small {
+            @extend .title;
+            margin-left: -7rem;
+            font-size: 14px;
+        }
+    }
+
+    .desc {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 33px;
+        letter-spacing: 0em;
+        display: flex;
+        gap: 1rem;
+        margin-top: 0.5rem;
+
+        &-small {
+            @extend .desc;
+            font-size: 14px;
+            line-height: 5px;
+            margin-left: -7rem;
+            align-items: center;
+        }
     }
 }
