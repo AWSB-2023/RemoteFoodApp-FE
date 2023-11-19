@@ -6,6 +6,7 @@ import Navbar from './components/Navbar';
 import HomePage from './pages/HomePage/HomePage';
 import TopPage from './pages/Top/TopPage';
 import DishPage from './pages/DishPage/DishPage';
+import SignUp from './pages/Login/SignUp';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
             <Route path='/dish/:dishId' element={<DishPage />} />
           </Route>
           <Route path='/' element={<LandingPage />} />
+          <Route path='/signup' element={<SignUp />} />
         </Routes>
       </Router>
     </div>
