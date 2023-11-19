@@ -6,7 +6,7 @@ import turkeyIcon from '../../images/turkey.svg';
 import polandIcon from '../../images/poland.svg';
 import './HomePage.scss';
 import FoodColumn from '../../components/FoodComponent/FoodColumn';
-import { mockData } from './mockData';
+import { mockData } from '../../mocks/mockData';
 
 export default function HomePage() {
   return (
@@ -20,7 +20,7 @@ export default function HomePage() {
         <img src={usaIcon} alt='USA' />
       </div>
       <div className='home-foods'>
-        {mockData.map((el) => (
+        {mockData.slice(0, 3).map((el) => (
           <FoodColumn
             name={el.name}
             image={el.img}

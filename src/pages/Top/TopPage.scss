@@ -1,0 +1,23 @@
+.top-foods {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    margin: 5rem 0 0 10rem;
+}
+
+.custom-button {
+    width: 250px;
+    background-color: transparent;
+    border: 2px solid var(--dark-green);
+    border-radius: 5px;
+    color: var(--dark-green);
+    font-size: 20px;
+
+}
+
+.top-food-row {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
