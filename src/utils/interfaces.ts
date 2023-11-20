@@ -4,6 +4,7 @@ export interface IDish {
   rating: number;
   time: number;
   img: string;
+  country: string;
   ingredients?: string[];
   method?: string[];
 }
