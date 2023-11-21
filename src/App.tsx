@@ -8,6 +8,7 @@ import TopPage from './pages/Top/TopPage';
 import DishPage from './pages/DishPage/DishPage';
 import SignUp from './pages/Login/SignUp';
 import SeeAll from './pages/SeeAll/SeeAll';
+import AddPage from './pages/AddPage/AddPage';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           >
             <Route path='/home' element={<HomePage />} />
             <Route path='/top' element={<TopPage />} />
+            <Route path='/add' element={<AddPage />} />
             <Route path='/all' element={<SeeAll />} />
             <Route path='/all/:countryName' element={<SeeAll />} />
             <Route path='/dish/:dishId' element={<DishPage />} />
