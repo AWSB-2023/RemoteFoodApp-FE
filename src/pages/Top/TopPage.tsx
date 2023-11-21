@@ -2,9 +2,11 @@ import './TopPage.scss';
 import { mockData } from '../../mocks/mockData';
 import FoodRow from '../../components/FoodComponent/FoodRow';
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 export default function TopPage() {
   const [displayedOnPage, setDisplayedOnPage] = useState(5);
+  const navigate = useNavigate();
 
   return (
     <div className='landing-page'>
@@ -36,9 +38,13 @@ export default function TopPage() {
         <div>
           <button
             className='custom-button'
+            style={{ marginRight: 20 }}
             onClick={() => setDisplayedOnPage(displayedOnPage + 10)}
           >
             See more
+          </button>
+          <button className='custom-button' onClick={() => navigate(`/all`)}>
+            See all
           </button>
         </div>
       )}

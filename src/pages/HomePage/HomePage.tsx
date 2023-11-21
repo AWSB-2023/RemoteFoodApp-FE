@@ -7,17 +7,39 @@ import polandIcon from '../../images/poland.svg';
 import './HomePage.scss';
 import FoodColumn from '../../components/FoodComponent/FoodColumn';
 import { mockData } from '../../mocks/mockData';
+import { useNavigate } from 'react-router-dom';
 
 export default function HomePage() {
+  const navigate = useNavigate();
   return (
     <div className='landing-page'>
       <div className='flags'>
-        <img src={polandIcon} alt='Poland' />
-        <img src={turkeyIcon} alt='Turkey' />
-        <img src={japanIcon} alt='Japan' />
-        <img src={italyIcon} alt='Italy' />
-        <img src={chinaIcon} alt='China' />
-        <img src={usaIcon} alt='USA' />
+        <img
+          onClick={() => navigate('/all/poland')}
+          src={polandIcon}
+          alt='Poland'
+        />
+        <img
+          onClick={() => navigate('/all/turkey')}
+          src={turkeyIcon}
+          alt='Turkey'
+        />
+        <img
+          onClick={() => navigate('/all/japan')}
+          src={japanIcon}
+          alt='Japan'
+        />
+        <img
+          onClick={() => navigate('/all/italy')}
+          src={italyIcon}
+          alt='Italy'
+        />
+        <img
+          onClick={() => navigate('/all/china')}
+          src={chinaIcon}
+          alt='China'
+        />
+        <img onClick={() => navigate('/all/usa')} src={usaIcon} alt='USA' />
       </div>
       <div className='home-foods'>
         {mockData.slice(0, 3).map((el) => (
@@ -29,6 +51,15 @@ export default function HomePage() {
             id={el.id}
           />
         ))}
+      </div>
+      <div>
+        <button
+          style={{ marginTop: 50 }}
+          className='custom-button'
+          onClick={() => navigate(`/all`)}
+        >
+          See all
+        </button>
       </div>
     </div>
   );
