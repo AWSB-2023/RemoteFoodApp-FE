@@ -9,6 +9,9 @@ import DishPage from './pages/DishPage/DishPage';
 import SignUp from './pages/Login/SignUp';
 import SeeAll from './pages/SeeAll/SeeAll';
 import AddPage from './pages/AddPage/AddPage';
+import ProfilePage from './pages/ProfilePage/ProfilePage';
+import Favourites from './pages/ProfilePage/Favourites';
+import MyDishes from './pages/ProfilePage/MyDishes';
 
 function App() {
   return (
@@ -26,6 +29,9 @@ function App() {
             <Route path='/home' element={<HomePage />} />
             <Route path='/top' element={<TopPage />} />
             <Route path='/add' element={<AddPage />} />
+            <Route path='/profile' element={<ProfilePage />} />
+            <Route path='/favourites' element={<Favourites />} />
+            <Route path='/mydishes' element={<MyDishes />} />
             <Route path='/all' element={<SeeAll />} />
             <Route path='/all/:countryName' element={<SeeAll />} />
             <Route path='/dish/:dishId' element={<DishPage />} />
