@@ -4,6 +4,10 @@
     display: flex;
     justify-content: center;
     gap: 8rem;
+    
+    img {
+        cursor: pointer;
+    }
 }
 
 .home-foods {
