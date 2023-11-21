@@ -1,0 +1,101 @@
+.add-page {
+    margin: 5rem;
+    .add-food-form {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-around;
+
+        .inputs-section {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+
+            div {
+                display: flex;
+                flex-direction: column;
+                text-align: left;
+                
+                label {
+                    color: var(--dark-green);
+                    font-weight: 600;
+                    font-size: 22px;
+                }
+
+                input, select {
+                    border: 2px solid var(--gray);
+                    height: 50px;
+                    width: 330px;
+                    border-radius: 30px;
+                    padding: 0.5em 2em 0.5em 1em;
+                    font-size: 24px;
+                    color: var(--gray);
+                }
+                .photo-input {
+                    background-color: var(--white);
+                    background-image: url('./camera.svg');
+                    background-repeat: no-repeat;
+                    background-position: right 1rem top 50%, 0 0;
+                    padding: 1em 2em 0em 1em;
+                }
+
+                .photo-input::-webkit-file-upload-button {
+                    display: none;
+                  }
+                  .photo-input::before {
+                    display: none;
+                  }
+                  .photo-input:hover::before {
+                    border-color: black;
+                  }
+
+                select {
+                    width: 405px;
+                    height: 78px;
+
+                    &.custom-select {
+                        appearance: none;
+                        background-color: white;
+                        background-image: url("data:image/svg+xml, <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23858585' width='18px' height='18px'><path d='M7 10l5 5 5-5z' /></svg>");
+                        background-repeat: no-repeat;
+                        background-position: right 0 top 50%, 0 0;
+                        background-size: 50px auto, 100%;
+                    }
+                }
+            }
+        }
+
+        .textarea-section {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+
+            div {
+                display: flex;
+                flex-direction: column;
+                text-align: left;
+                
+                label {
+                    color: var(--dark-green);
+                    font-weight: 600;
+                    font-size: 22px;
+                }
+
+                textarea {
+                    border: 2px solid var(--gray);
+                    border-radius: 30px;
+                    padding: 0.5em 2em 0.5em 1em;
+                    font-size: 24px;
+                    color: var(--gray);
+                    width: 680px;
+                }
+                #method {
+                    height: 330px;
+                }
+                #ingredients {
+                    height: 190px;
+                }
+            }
+        }
+    }
+}
