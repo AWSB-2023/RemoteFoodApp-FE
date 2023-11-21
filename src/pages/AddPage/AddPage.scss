@@ -31,6 +31,24 @@
                     font-size: 24px;
                     color: var(--gray);
                 }
+                .photo-input {
+                    background-color: var(--white);
+                    background-image: url('./camera.svg');
+                    background-repeat: no-repeat;
+                    background-position: right 1rem top 50%, 0 0;
+                    padding: 1em 2em 0em 1em;
+                }
+
+                .photo-input::-webkit-file-upload-button {
+                    display: none;
+                  }
+                  .photo-input::before {
+                    display: none;
+                  }
+                  .photo-input:hover::before {
+                    border-color: black;
+                  }
+
                 select {
                     width: 405px;
                     height: 78px;
